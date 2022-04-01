@@ -5,21 +5,7 @@ plugins {
 }
 
 android {
-
-    /*signingConfigs {
-        debug {
-            keyAlias 'debug'
-            storeFile file('C:\\desenv\\kayto\\secrets\\debug.jks')
-            keyPassword 'Jurema159753'
-            storePassword 'Jurema159753'
-        }
-        release {
-            keyAlias 'release'
-            storeFile file('C:\\desenv\\kayto\\secrets\\release.jks')
-            keyPassword 'Jurema159753'
-            storePassword 'Jurema159753'
-        }
-    }*/
+    
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -70,7 +56,7 @@ android {
         }
         pay {
             dimension "typeUser"
-            applicationId "com.leonamleite.marvelapi.dev"
+            applicationId "com.leonamleite.marvelapi"
         }
     }
 
