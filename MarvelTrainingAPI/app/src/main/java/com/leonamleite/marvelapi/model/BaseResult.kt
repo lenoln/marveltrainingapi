@@ -1,11 +1,14 @@
 package com.leonamleite.marvelapi.model
 
-data class BaseResult(
+import com.google.gson.annotations.SerializedName
+
+data class BaseResult<T>(
     val attributionHTML: String,
     val attributionText: String,
     val code: Int,
     val copyright: String,
-    val `data`: Data,
+    @SerializedName("data")
+    val baseData: BaseData<T>,
     val etag: String,
     val status: String
 )

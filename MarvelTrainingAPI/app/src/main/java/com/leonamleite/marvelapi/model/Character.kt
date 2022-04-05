@@ -11,5 +11,5 @@ data class Character(
     val series: Series,
     val stories: Stories,
     val thumbnail: Thumbnail,
-    val urls:List<Url>
+    val urls:List<UrlCharacter>
 )
