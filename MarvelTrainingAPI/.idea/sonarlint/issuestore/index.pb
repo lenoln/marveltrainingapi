@@ -24,8 +24,6 @@ l
 <app/src/main/java/com/leonamleite/marvelapi/model/ItemXXX.kt,1\6\16ceb3ed722ed87ac6b5b3b9c58a97cf26e466a5
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 k
@@ -36,13 +34,11 @@ i
 9app/src/main/java/com/leonamleite/marvelapi/model/Item.kt,2\8\289f91c770ec12eb2d7be6271122ff356e908ab5
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-p
-@app/src/main/java/com/leonamleite/marvelapi/view/MainActivity.kt,6\7\67d8417e2aa569f13b7b4b07db77d00c77925fa1
 k
 ;app/src/main/java/com/leonamleite/marvelapi/model/Events.kt,9\d\9d7f770989289ade00acb60f4128714009e16a47
 k
 ;app/src/main/java/com/leonamleite/marvelapi/model/Comics.kt,4\e\4e12dcc15355af7151870c029e35d93641e45a74
 n
 >app/src/main/java/com/leonamleite/marvelapi/model/Thumbnail.kt,5\e\5eaf291de229f3aa4d0ddaa5b48b64474bbd29a2
-b
-2app/src/main/java/com/leonamleite/marvelapi/App.kt,8\c\8ce1c70488f0afce2314d36db317e2ce55ff0464
+q
+Aapp/src/main/java/com/leonamleite/marvelapi/model/UrlCharacter.kt,0\5\055c166856490903e859b6dc60c49cc386ab8884

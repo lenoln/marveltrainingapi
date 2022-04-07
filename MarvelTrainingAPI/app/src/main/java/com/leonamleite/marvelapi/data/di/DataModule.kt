@@ -3,9 +3,10 @@ package com.leonamleite.marvelapi.data.di
 import android.util.Log
 import com.google.gson.GsonBuilder
 import com.leonamleite.marvelapi.BuildConfig
+import com.leonamleite.marvelapi.data.repositories.CharacterRepository
+import com.leonamleite.marvelapi.data.repositories.CharacterRepositoryImp
 import com.leonamleite.marvelapi.data.services.CharacterService
 import com.leonamleite.marvelapi.networking.clients.GeneralApiClient
-import com.leonamleite.marvelapi.networking.interceptors.MarvelInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.core.context.loadKoinModules
@@ -19,7 +20,7 @@ object DataModule {
     private const val BASE_URL = BuildConfig.BASE_URL
 
     fun load() {
-        loadKoinModules(networkModules())
+        loadKoinModules(networkModules() + repositoriesModule())
     }
 
     private fun networkModules(): Module {
@@ -38,6 +39,12 @@ object DataModule {
             single {
                 createService<CharacterService>(get(), get())
             }
+        }
+    }
+
+    private fun repositoriesModule(): Module {
+        return module {
+            single<CharacterRepository> { CharacterRepositoryImp(get()) }
         }
     }
 
